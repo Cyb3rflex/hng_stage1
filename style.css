@@ -1,0 +1,120 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  background-color: rgb(126, 128, 52);
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(48, 14, 14, 0.65);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(83, 36, 36, 0.65);
+}
+
+.color-box {
+  width: 200px;
+  height: 200px;
+  margin: 20px auto;
+  border: 2px solid #000;
+  border-radius: 10px;
+}
+
+.color-options {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+}
+
+.color-options button {
+  width: 80px;
+  height: 80px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.color-options button:hover {
+  transform: scale(1.1);
+}
+
+button[data-testid="newGameButton"] {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: rgb(51, 48, 1);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button[data-testid="newGameButton"]:hover {
+  background-color: rgb(1, 36, 22);
+}
+
+p[data-testid="gameStatus"] {
+  font-weight: bold;
+  color: #fff;
+  margin: 10px 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 90%;
+    margin: 30px auto;
+    padding: 15px;
+  }
+
+  .color-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  .color-options button {
+    width: 60px;
+    height: 60px;
+  }
+
+  button[data-testid="newGameButton"] {
+    font-size: 14px;
+    padding: 8px 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    width: 95%;
+    margin: 20px auto;
+    padding: 10px;
+  }
+
+  .color-box {
+    width: 120px;
+    height: 120px;
+  }
+
+  .color-options {
+    gap: 5px;
+  }
+
+  .color-options button {
+    width: 50px;
+    height: 50px;
+  }
+
+  button[data-testid="newGameButton"] {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+
+  p[data-testid="gameStatus"] {
+    font-size: 14px;
+  }
+}
